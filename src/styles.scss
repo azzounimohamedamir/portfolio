@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply text-gray-900;
+}
+
+/* Smooth scroll offset for fixed header */
+section {
+  scroll-margin-top: 5rem;
+}
+
+/* Form focus styles */
+input:focus, 
+textarea:focus {
+  @apply outline-none ring-2 ring-blue-600 border-transparent;
+}
+
+/* Button hover effects */
+button:hover,
+a:hover {
+  @apply transition-all duration-200;
+}
+
+/* Container padding adjustments */
+.container {
+  @apply px-4;
+}
+
+/* Section spacing */
+section {
+  @apply py-16 md:py-20;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+/* Link styles */
+a {
+  @apply cursor-pointer;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
